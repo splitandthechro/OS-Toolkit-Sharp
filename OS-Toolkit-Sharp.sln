@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libostk", "libostk\libostk.csproj", "{20AFB321-52C7-4185-920F-908AC6741C52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osc", "osc\osc.csproj", "{599C0715-59A9-407A-A640-E169FC357FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKernel", "TestKernel\TestKernel.csproj", "{8F19BCCF-6D69-4B0D-9027-F24A9950BEE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{20AFB321-52C7-4185-920F-908AC6741C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AFB321-52C7-4185-920F-908AC6741C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AFB321-52C7-4185-920F-908AC6741C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599C0715-59A9-407A-A640-E169FC357FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599C0715-59A9-407A-A640-E169FC357FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599C0715-59A9-407A-A640-E169FC357FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599C0715-59A9-407A-A640-E169FC357FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F19BCCF-6D69-4B0D-9027-F24A9950BEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F19BCCF-6D69-4B0D-9027-F24A9950BEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F19BCCF-6D69-4B0D-9027-F24A9950BEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F19BCCF-6D69-4B0D-9027-F24A9950BEE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
