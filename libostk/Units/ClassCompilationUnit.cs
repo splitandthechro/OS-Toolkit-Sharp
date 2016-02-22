@@ -63,9 +63,11 @@ namespace libostk {
 		/// Compiles this unit using the specified assembly writer.
 		/// </summary>
 		/// <param name="writer">Writer.</param>
-		public void Compile (AssemblyWriter writer) {
+		public void Compile (AssemblyBuilder writer) {
 
-			// TODO: Create label
+			// Create label
+			writer.WriteLabel (Label);
+
 			// TODO: Create constants
 			// TODO: Create string constants
 

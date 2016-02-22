@@ -18,7 +18,7 @@ namespace libostk {
 
 		#region ICompilationUnit implementation
 
-		public void Compile (AssemblyWriter writer) {
+		public void Compile (AssemblyBuilder writer) {
 			foreach (var unit in Units)
 				unit.Compile (writer);
 		}

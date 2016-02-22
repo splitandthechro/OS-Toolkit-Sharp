@@ -1,21 +1,22 @@
 ﻿using System;
+using System.IO;
 
 namespace libostk {
 	
 	public class Compiler {
-
-		AssemblyWriter Writer;
+		
 		SourceAssembly Source;
 
 		// Compilation passes
 		readonly StructuringPass Pass1;
+		readonly GeneratingPass Pass2;
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="libostk.Compiler"/> class.
 		/// </summary>
 		public Compiler () {
-			Writer = new AssemblyWriter ();
 			Pass1 = new StructuringPass ();
+			Pass2 = new GeneratingPass ();
 		}
 
 		/// <summary>
@@ -40,6 +41,10 @@ namespace libostk {
 
 			// Run the compiler passes
 			var structure = Pass1.Compile (data: Source);
+			var builder = Pass2.Compile (structure);
+
+			// Write code to disk
+			File.WriteAllText ("kernel.asm", builder.GetFinalCode ());
 		}
 	}
 }

@@ -16,7 +16,7 @@ namespace libostk {
 			var accum = new StringBuilder ();
 			foreach (var chr in str)
 				accum.Append (ALLOWED.Contains (chr) ? chr : '_');
-			return accum.ToString ();
+			return accum.ToString ().Trim ('_');
 		}
 	}
 }

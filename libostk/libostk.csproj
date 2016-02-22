@@ -60,8 +60,11 @@
     <Compile Include="Exceptions\UnsupportedArchitectureException.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Core\Compiler.cs" />
-    <Compile Include="Core\AssemblyWriter.cs" />
     <Compile Include="Core\SourceAssembly.cs" />
+    <Compile Include="Assembly\AssemblyBuilder.cs" />
+    <Compile Include="Assembly\MultibootFlags.cs" />
+    <Compile Include="Assembly\AssemblyBuilder.Constants.cs" />
+    <Compile Include="Passes\GeneratingPass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -76,5 +79,6 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Extensions\" />
     <Folder Include="Core\" />
+    <Folder Include="Assembly\" />
   </ItemGroup>
 </Project>

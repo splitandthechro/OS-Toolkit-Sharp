@@ -11,7 +11,7 @@ namespace libostk {
 		/// Compiles this unit using the specified assembly writer.
 		/// </summary>
 		/// <param name="writer">Writer.</param>
-		void Compile (AssemblyWriter writer);
+		void Compile (AssemblyBuilder writer);
 	}
 }
 
